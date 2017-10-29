@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UniChat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		#custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+			-webkit-border-radius: .3125em;
+			border-radius: .3125em;
+		}
+	</style>
+</head>
+<body>
+	<div data-role="page" id = "page0"> 
+		<div data-role="header">
+			<h1 style="font-size:20px">UniChat</h1>
+		</div><!-- /header -->
+ 		<div data-role="content">
+ 			<p>Welcome to UniChat</p>
+			<br />
+			<p><a href="#page1" class="ui-btn ui-shadow ui-corner-all">Register</a></p>
+			<p><a href="#page2" class="ui-btn ui-shadow ui-corner-all">Sign in</a></p>
+ 		</div><!-- /content -->
+		
+	</div><!-- /page -->
+	
+	<div data-role="page" id = "page1" > 
+		<div data-role="header">
+			<h1 style="font-size:20px">UniChat</h1>
+			<a href="#page0" class="ui-btn-right">Main page</a>
+		</div><!-- /header -->
+ 		<div data-role="content">
+ 			<p style="font-size:14px">Please supply your information</p>
+			<label style="font-weight:bold" for="text-basic">Name</label>
+			<input type="text" name="text-basic" id="text-basic"  value="">
+			<label style="font-weight:bold" for="text-basic">Student ID</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
+			<label style="font-weight:bold" for="text-basic">Uni Email</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
+			<label style="font-weight:bold" for="number-pattern">Age</label>
+			<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+			<label style="font-weight:bold" for="text-basic">Degree Name</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
+			<label style="font-weight:bold" for="password">Password</label>
+			<input type="password" name="password" id="password" value="">
+			<br />
+			<button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Register</button>
+			
+ 		</div><!-- /content -->
+	</div><!-- /page -->
+	
+	<div data-role="page" id = "page2" > 
+		<div data-role="header">
+			<h1 style="font-size:20px">UniChat</h1>
+			<a href="#page0" class="ui-btn-right">Main page</a>
+		</div><!-- /header -->
+ 		<div data-role="content">
+ 			
+			<label for="text-basic">Uni Email</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" value="">
+			<br />
+			<br />
+			<br />
+			<button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Sign in</button>
+			<a style="font-size:12px">Forgotten password?</a>
+			
+ 		</div><!-- /content -->
+	</div><!-- /page -->
+	
+</body>
+</html>
