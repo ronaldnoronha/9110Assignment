@@ -273,25 +273,25 @@
 	</div><!-- /page -->
 	
 	<div data-role="page" id="chat" >
-		<div data-role="header">
-			<h1 style="font-size:20px">Chats</h1>
-		</div><!-- /header -->
-		<div data-role="content">
 	
-			<br>
+	<div data-role="content">
+	
+			<h1 style="font-size:20px">UniChat</h1>
 
-			<ul data-role="listview" data-filter="true">
-				<li><a href="#MessagePage"  data-transition="slidedown" rel="external"> <img src="img/glassesguy.png"> <h3>Harry</h3> <br> <p>See you tomorrow!</p> <span class="ui-li-count" style="color:red"> <red>1</red> </span> </a> </li>
-				<li><a href=""  data-transition="slidedown" rel="external"> <img src="img/avatarfiller.png"> <h3>COMP0011Assignment</h3> <br> <p>Thanks</p> <span class="ui-li-count" style="color:red"> <red>1</red> </span> </a> </li>
-		
-		   <br>
-		   <br>
-		   
-		   <button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Create New Chat</button>
-		   <button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Create Chat Group</button>
-		</div>
-		
-		<div data-role="footer" data-position="fixed">
+		<br>
+		<br>
+
+		<ul data-role="listview" data-filter="true">
+			<li><a href="#MessagePage"  data-transition="slidedown" rel="external"> <img src="glassesguy.png"> <h3>Harry</h3> <br> <p>See you tomorrow!</p> <span class="ui-li-count" style="color:red"> <red>1</red> </span> </a> </li>
+	         <li><a href="#ChatPage"  data-transition="slidedown" rel="external"> <img src="avatarfiller.png"> <h3>COMP0011Assignment</h3> <br> <p>Thanks</p> <span class="ui-li-count" style="color:red"> <red>1</red> </span> </a> </li>
+	
+	   <br>
+	   <br>
+	   
+	   <a data-role="button" href="#" rel="external"><h4>Create New Chat</h4></a>
+	   <a data-role="button" href="#group" rel="external"><h4>Create Chat Group</h4></a>
+
+	<div data-role="footer" data-position="fixed">
 			<div data-role="navbar" class="ui-body-b">
 			<ul>
 				<li><a href="#profile" data-icon="user">Profile</a></li>
@@ -303,82 +303,200 @@
 			</ul>
 			</div>
 		</div><!-- /footer -->
-
-		</div><!-- /page -->
-
-
-
-	<div data-role="page" id="MessagePage">
-		<div data-role="header">
-			<h1 style="font-size:20px">Chat box</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			</div>
-			<ul data-role="listview" data-inset="true">
-				<li><a href="#detail"  data-rel="popup"> <img src="img/glassesguy.png"> <h3>Harry</h3><p>Online 5 mins ago</p> </a> </li>
-			</ul>
-			
-			<br>
-			<br>
-
-			<div style="width: 100%; height: 120px;">
-				<img src="img/glassesguy.png" style="width: 40px;">
-				<ul data-role="listview" data-inset="true" style="width: 60%;">
-					<li>Thanks! </li>
-				</ul>
-				<p>11:05pm</p>
-			</div>
-
-			<div style="width: 100%; height: 120px; text-align: right;">
-				<img src="img/brownhairgirl.png" style="width: 40px;">
-				<ul data-role="listview" data-inset="true" style="width: 60%; position: absolute; right: 20px;">
-					<li>No worries </li>
-					
-				</ul>
-				<br>
-					<br>
-					<br>
-					<li><p>11:08pm</p></li>
-				
-			</div>
-			
-
-			<div style="width: 100%; height: 120px;">
-				<img src="img/glassesguy.png" style="width: 40px;">
-				<ul data-role="listview" data-inset="true" style="width: 60%;">
-					<li>See you tomorrow! </li>
-				</ul>
-				<p>11:23pm</p>
-			</div>
-	 
-		 <label for="textarea-a"></label>
-		 <br>
-		<textarea name="textarea" id="textarea-a">
-		Type your message...
-		</textarea>
-
-			
-			
-			<br>
-		 <br>
-		 <button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Send</button>
-		</div>
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar" class="ui-body-b">
-			<ul>
-				<li><a href="#profile" data-icon="user">Profile</a></li>
-				<li><a href="#post" data-icon="edit">Posts</a></li>
-				<li><a href="#chat" data-icon="comment">Chats</a></li>
-				<li><a href="#friend" data-icon="heart">Friends</a></li>
-				<li><a href="#group" data-icon="cloud">Groups</a></li>
-				
-			</ul>
-			</div>
-		</div><!-- /footer -->
-		
-		
-	
 	</div><!-- /page -->
+</div><!--/content-->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="MessagePage" data-theme="c">
+
+	<div data-role="content">
+
+	
+		<div id="branding">
+			<h1>UniChat</h1>
+		</div>
+	    
+
+        <ul data-role="listview" data-inset="true">
+			<li><a href="#detail"  data-rel="popup"> <img src="glassesguy.png"> <h3>Harry</h3><p>Online 5 mins ago</p> </a> </li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+        <br>
+
+		<div style="width: 100%; height: 120px;">
+			<img src="glassesguy.png" style="width: 40px;">
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>Thanks! </li>
+			</ul>
+			<p>11:05pm</p>
+		</div>
+
+		<div style="width: 100%; height: 120px; text-align: right;">
+			<img src="brownhairgirl.png" style="width: 40px;">
+			<ul data-role="listview" data-inset="true" style="width: 60%; position: absolute; right: 20px;">
+				<li>No worries </li>
+				
+			</ul>
+			<br>
+				<br>
+				<br>
+				<br>
+				<li><p>11:08pm</p></li>
+			
+		</div>
+		
+
+		<div style="width: 100%; height: 120px;">
+			<img src="glassesguy.png" style="width: 40px;">
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>See you tomorrow! </li>
+			</ul>
+			<p>11:23pm</p>
+		</div>
+ 
+ <label for="textarea-a"></label>
+ <br>
+<textarea name="textarea" id="textarea-a">
+Type your message...
+</textarea>
+
+	<br>
+    <br>
+ <a data-role="button" href="#" rel="external"><h4>Send</h4></a>
+ 
+ 
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="ui-body-b">
+			<ul>
+				<li><a href="#profile" data-icon="user">Profile</a></li>
+				<li><a href="#post" data-icon="edit">Posts</a></li>
+				<li><a href="#chat" data-icon="comment">Chats</a></li>
+				<li><a href="#friend" data-icon="heart">Friends</a></li>
+				<li><a href="#group" data-icon="cloud">Groups</a></li>
+				
+			</ul>
+			</div>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+
+
+<div data-role="page" id="ChatPage" data-theme="c">
+
+	<div data-role="content">
+	
+		<div data-role="content">
+
+	
+		<div id="branding">
+			<h1>UniChat</h1>
+		</div>
+	    
+
+        <ul data-role="listview" data-inset="true">
+			<li><a href="#detail"  data-rel="popup"> <img src="glassesguy.png"> <h3>Harry</h3><p>Online 5 mins ago</p> </a> </li>
+			<li><a href="#detail"  data-rel="popup"> <img src="avatarfiller.png"> <h3>Ellie</h3><p>Online now</p> </a> </li>
+			<li><a href="#detail"  data-rel="popup"> <img src="mario.jpg"> <h3>Mario</h3><p>Online 1 hour ago</p> </a> </li>
+		</ul>
+		<a data-role="button" href="#" rel="external"><h4>Add new members</h4></a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+        <br>
+
+		<div style="width: 100%; height: 120px;">
+			<img src="glassesguy.png" style="width: 40px;">
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>Don't forget the group meeting! </li>
+			</ul>
+			<p>9:30pm</p>
+		</div>
+
+		<div style="width: 100%; height: 120px; text-align: right;">
+			<img src="brownhairgirl.png" style="width: 40px;">
+			<ul data-role="listview" data-inset="true" style="width: 60%; position: absolute; right: 20px;">
+				<li>At what time? </li>
+				
+			</ul>
+			<br>
+				<br>
+				<br>
+				<br>
+				<li><p>9:50pm</p></li>
+			
+		</div>
+		
+
+		<div style="width: 100%; height: 120px;">
+			<img src="avatarfiller.png" style="width: 40px;">
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>At 10am! </li>
+			</ul>
+			<p>9:53pm</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		
+		
+		<div style="width: 100%; height: 120px;">
+			<img src="mario.jpg" style="width: 40px;">
+			<ul data-role="listview" data-inset="true" style="width: 60%;">
+				<li>Thanks for the reminder! </li>
+			</ul>
+			<p>10:37pm</p>
+		</div>
+		
+ 
+ <label for="textarea-a"></label>
+ <br>
+<textarea name="textarea" id="textarea-a">
+Type your message...
+</textarea>
+
+	<br>
+    <br>
+ <a data-role="button" href="#" rel="external"><h4>Send</h4></a>
+ 
+ 
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="ui-body-b">
+			<ul>
+				<li><a href="#profile" data-icon="user">Profile</a></li>
+				<li><a href="#post" data-icon="edit">Posts</a></li>
+				<li><a href="#chat" data-icon="comment">Chats</a></li>
+				<li><a href="#friend" data-icon="heart">Friends</a></li>
+				<li><a href="#group" data-icon="cloud">Groups</a></li>
+				
+			</ul>
+			</div>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+	
+	</div><!-- /content -->
+</div><!-- /page -->
+	
+	
+	
+		
+</div><!--/page-->
+		
+		
 
 	<div data-role="page" id = "friend"> 
 		<div data-role="header">
