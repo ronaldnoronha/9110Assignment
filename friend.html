@@ -21,6 +21,7 @@
 		</div><!-- /header -->
  		<div data-role="content">
 			<br />
+			<h2>Friends List</h2>
 			<p>
 			<img src = "mario.jpg" width = "92" height = "120"
 				alt = "Mario Profile picture">
@@ -47,14 +48,41 @@
 	
 	<div data-role="page" id = "page1" > 
 		<div data-role="header">
-			<h1 style="font-size:20px">Search for a Friend</h1>
+			<h1 style="font-size:20px">Search for Friends</h1>
 			<a href="#page0" class="ui-btn-right">Back to Friends</a>
 		</div><!-- /header -->
  		<div data-role="content">
 			<label style="font-weight:bold" for="text-basic">Please type the name of the friend below</label>
 			<input type="text" name="text-basic" id="text-basic"  value="">
 			<br />
-			<button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Search</button>
+			<p><a href="#page2" class="ui-btn ui-shadow ui-corner-all">Search</a></p>
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="message.html" class="ui-btn-active ui-state-persist" data-icon="home">Messages</a></li>
+				<li><a href="friend.html" rel="external" data-icon="plus">Friends</a></li>
+				<li><a href="group.html" rel="external" data-icon="grid">Groups</a></li>
+				<li><a href="post.html" rel="external" data-icon="star">Posts</a></li>
+				<li><a href="profile.html" rel="external" data-icon="gear">Profile</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+ 		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role="page" id = "page2" > 
+		<div data-role="header">
+			<h1 style="font-size:20px">Search for Friends</h1>
+		</div><!-- /header -->
+ 		<div data-role="content">
+			<label style="font-weight:bold" for="text-basic">Following Friends Found</label>
+			<br />
+			<a href ="#page3">
+				<img src = "einstein.jpg" width = "65" height = "50" alt = "Albert Einstein">
+				<label style="font-weight:bold" for="text-basic">Albert Einstein</label>
+			</a>
+
+			<button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Add Friend</button>
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar">
 			<ul>
