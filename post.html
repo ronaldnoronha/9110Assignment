@@ -20,9 +20,20 @@
 			<h1 style="font-size:20px">UniChat</h1>
 		</div><!-- /header -->
  		<div data-role="content">
- 			<p>Posts</p>
+ 			<label style="font-weight:bold" for="text-basic" align="center">Posts</label>
 			<br />
 			<p><a href="#page1" class="ui-btn ui-shadow ui-corner-all">Create Post</a></p>
+			<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="message.html" class="ui-btn-active ui-state-persist" data-icon="home">Messages</a></li>
+				<li><a href="friend.html" rel="external" data-icon="plus">Friends</a></li>
+				<li><a href="group.html" rel="external" data-icon="grid">Groups</a></li>
+				<li><a href="post.html" rel="external" data-icon="star">Posts</a></li>
+				<li><a href="profile.html" rel="external" data-icon="gear">Profile</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
  		</div><!-- /content -->
 		
 	</div><!-- /page -->
@@ -30,17 +41,32 @@
 	<div data-role="page" id = "page1" > 
 		<div data-role="header">
 			<h1 style="font-size:20px">Create Post</h1>
-			<a href="#page0" class="ui-btn-right">Main Page</a>
+			<a href="#page0" class="ui-btn-right">Back to Posts</a>
 		</div><!-- /header -->
  		<div data-role="content">
  			<p style="font-size:14px">Please type the text below</p>
 			<label style="font-weight:bold" for="text-basic">Post</label>
 			<input type="text" name="text-basic" id="text-basic"  value="">
 			<br />
-			<button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Attach</button>
-			<button class = "ui-btn ui-shadow ui-corner-all ui-btn-b">Submit</button>
-			
+			<p>
+			<input type = "submit" value = "Attach">
+			<input type = "submit" value = "Submit">
+			<input type = "submit" value = "Cancel Post">
+			</p>
+			<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="message.html" class="ui-btn-active ui-state-persist" data-icon="home">Messages</a></li>
+				<li><a href="friend.html" rel="external" data-icon="plus">Friends</a></li>
+				<li><a href="group.html" rel="external" data-icon="grid">Groups</a></li>
+				<li><a href="post.html" rel="external" data-icon="star">Posts</a></li>
+				<li><a href="profile.html" rel="external" data-icon="gear">Profile</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
  		</div><!-- /content -->
 	</div><!-- /page -->
+
+
 </body>
 </html>
